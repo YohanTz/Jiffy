@@ -1,0 +1,16 @@
+{
+  "name": "Jiffy - Your time extension",
+  "short_name": "Jiffy",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Jiffy"
+  },
+  "permissions": [],
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  }
+}
