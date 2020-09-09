@@ -1,7 +1,9 @@
 * {
   margin: 0;
+  color: white;
 }
 body {
-  min-height: 500px;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  min-height: 400px;
   min-width: 500px;
 }
