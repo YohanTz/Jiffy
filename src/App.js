@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Header from './Components/Header';
+import Navigation from './Components/Navigation';
 
 const App = () => {
   const [activeP, setActiveP] = useState(true);
   return (
     <div className='App'>
-      <Header activeP={activeP} setActiveP={setActiveP} />
+      <Header />
+      <Navigation activeP={activeP} setActiveP={setActiveP} />
     </div>
   );
 };

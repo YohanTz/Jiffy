@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap);
+
 * {
   margin: 0;
   color: white;
 }
 body {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-color: #121212;
+  font-family: 'Kumbh Sans', sans-serif;
   min-height: 400px;
   min-width: 500px;
 }
