@@ -1,0 +1,13 @@
+.site-elem {
+  display: flex;
+  padding-top: 20px;
+}
+
+h2 {
+  width: 200px;
+}
+
+.bars {
+  height: 25px;
+  border-radius: 8px;
+}
