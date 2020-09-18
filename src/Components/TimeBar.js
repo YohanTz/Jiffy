@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Styles/TimeBar.css';
 
 const colors = [
@@ -9,16 +9,25 @@ const colors = [
 ];
 
 const TimeBar = ({ id, name, value, total }) => {
+  useEffect(() => {
+    document.getElementById(id).style.width = '100%';
+  });
+
   return (
     <div className='site-elem' key={id}>
       <h2>{name}</h2>
       <div
-        className='bars'
-        style={{
-          backgroundImage: colors[Math.floor(Math.random() * colors.length)],
-          width: (400 * value) / total + 'px',
-        }}
-      ></div>
+        className='bars-container'
+        style={{ width: (400 * value) / total + 'px' }}
+      >
+        <div
+          className='bars'
+          id={id}
+          style={{
+            backgroundImage: colors[Math.floor(Math.random() * colors.length)],
+          }}
+        ></div>
+      </div>
     </div>
   );
 };
