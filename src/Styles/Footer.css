@@ -3,3 +3,13 @@ footer {
   bottom: 12px;
   right: 12px;
 }
+
+.power-icon {
+  height: 2.5em;
+  fill: white;
+  cursor: pointer;
+}
+
+.power-icon:hover {
+  fill: #ffffff90;
+}

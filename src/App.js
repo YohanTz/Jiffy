@@ -8,11 +8,12 @@ const App = () => {
   const [activePage, setActivePage] = useState(true);
   const [activeApp, setActiveApp] = useState(true);
   return (
-    <div className='App'>
+    <div>
       <Header />
       <Navigation activeP={activePage} setActiveP={setActivePage} />
       {activePage ? <ScreenTime /> : null}
-      <Footer activeApp={activeApp} setActiveApp={setActiveApp} />
+      <Footer setActiveApp={setActiveApp} />
+      {!activeApp ? <div className='power-off'></div> : null}
     </div>
   );
 };

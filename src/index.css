@@ -10,3 +10,11 @@ body {
   min-height: 400px;
   min-width: 700px;
 }
+
+.power-off {
+  filter: blur(100px);
+  background-color: blue;
+  position: absolute;
+  width: 700px;
+  height: 400px;
+}

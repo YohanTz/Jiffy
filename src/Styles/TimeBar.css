@@ -16,12 +16,12 @@
   height: 25px;
   border-radius: 8px;
   width: 0px;
-  transition: width 3s ease;
+  transition: width 2s ease;
 }
 
 .time {
   margin-left: 20px;
-  animation: fadeIn ease 6s;
+  animation: fadeIn ease 4s;
 }
 
 @keyframes fadeIn {
