@@ -7,14 +7,13 @@ header {
 .logo {
   font-family: 'Righteous', cursive;
   font-size: 2.5em;
-  background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
     #c850c0 46%,
     #ffcc70 100%
   );
-  background-size: 20%;
+  background-size: 15%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;

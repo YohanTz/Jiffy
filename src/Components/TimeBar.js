@@ -8,14 +8,31 @@ const colors = [
   'linear-gradient(90deg, #5b247a, #1bcedf)',
 ];
 
+function timeConverter(value) {
+  if (value >= 3600) {
+    return (
+      Math.trunc(value / 3600) +
+      ' h ' +
+      Math.trunc((value % 3600) / 60) +
+      ' min'
+    );
+  } else if (value > 60) {
+    return Math.trunc(value / 60) + ' min';
+  } else {
+    return value + ' sec';
+  }
+}
+
 const TimeBar = ({ id, name, value, total }) => {
   useEffect(() => {
     document.getElementById(id).style.width = '100%';
   });
 
+  const color = colors[Math.floor(Math.random() * colors.length)];
+
   return (
     <div className='site-elem' key={id}>
-      <h2>{name}</h2>
+      <h2 className='name'>{name}</h2>
       <div
         className='bars-container'
         style={{ width: (400 * value) / total + 'px' }}
@@ -24,10 +41,11 @@ const TimeBar = ({ id, name, value, total }) => {
           className='bars'
           id={id}
           style={{
-            backgroundImage: colors[Math.floor(Math.random() * colors.length)],
+            backgroundImage: color,
           }}
         ></div>
       </div>
+      <h3 className='time'>{timeConverter(value)}</h3>
     </div>
   );
 };

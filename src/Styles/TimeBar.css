@@ -1,9 +1,10 @@
 .site-elem {
   display: flex;
+  align-items: center;
   padding-top: 20px;
 }
 
-h2 {
+.name {
   width: 200px;
 }
 
@@ -16,4 +17,54 @@ h2 {
   border-radius: 8px;
   width: 0px;
   transition: width 3s ease;
+}
+
+.time {
+  margin-left: 20px;
+  animation: fadeIn ease 6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
