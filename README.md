@@ -11,7 +11,7 @@
   <a href="https://reactjs.org">
     <img src="https://img.shields.io/badge/Made%20with-React-61dafb.svg?style=flat-square" alt="React Custom Badge">
   </a>
-  <a href=""https://github.com/YohanTz/Jiffy/pulls>
+  <a href="https://github.com/YohanTz/Jiffy/pulls">
       <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="Prs Welcome">
   </a>
   <a href="https://github.com/YohanTz/Jiffy/graphs/contributors">
