@@ -1,0 +1,10 @@
+.limit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.limit > .title {
+  margin-right: 40px;
+}
