@@ -14,6 +14,7 @@ const ScreenTime = () => {
       <div>
         {data.map((elem, id) => (
           <TimeBar
+            key={id}
             id={id}
             name={elem.name}
             value={elem.value}

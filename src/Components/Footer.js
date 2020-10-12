@@ -12,7 +12,7 @@ const Footer = ({ setActiveApp }) => {
         x='0px'
         y='0px'
         viewBox='0 0 24.303 24.303'
-        style={{ enableBackground: 'new 0 0 24.303 24.303;' }}
+        style={{ enableBackground: 'new 0 0 24.303 24.303' }}
         className='power-icon'
         onClick={() => setActiveApp(false)}
       >
